@@ -139,6 +139,18 @@
             background-color: #f7f7f7;
         }
 
+        /* animation on submit button */
+        input[type="submit"] {
+            /* existing styles */
+            transition: all 0.3s ease;
+          }
+          input[type="submit"]:hover {
+            background-color: #4CAF50;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          }
+
+
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             h1 { font-size: 2rem; }

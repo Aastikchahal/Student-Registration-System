@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <meta name="author" content="Aastik Chahal">
+    <meta name="keywords" content="HTML">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header>
+        <h1>🎓 Student Registration Hub</h1>
+        <p>Simplify your student management with our all-in-one registration system.
+             Add, view, edit, and delete student records with ease.</p>
+    
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="#registration-form">Register</a></li>
+            <li><a href="#student-records">View Records</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="container">
+        <main>
+            <section id="registration-form">
+                <h2>Register a New Student</h2>
+                <form id="student-form">
+                    <div class="form-group">
+                        <label for="student-name">Student Name:</label>
+                        <input type="text" id="student-name" name="student-name" required placeholder="e.g., John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="student-id">Student ID:</label>
+                        <input type="text" id="student-id" name="student-id" required placeholder="e.g., ST20240001">
+                    </div>
+                    <div class="form-group">
+                        <label for="student-email">Email ID:</label>
+                        <input type="email" id="student-email" name="student-email" required placeholder="e.g., john.doe@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="student-phone">Contact No:</label>
+                        <input type="tel" id="student-phone" name="student-phone" required placeholder="e.g., 123-456-7890">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Register Student">
+                    </div>
+                </form>
+            </section>
+
+            <section id="student-records">
+                <h2>Registered Students</h2>
+                <div id="student-table-container">
+                    <table id="student-table">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Student ID</th>
+                                <th>Email ID</th>
+                                <th>Contact No</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                    <tbody id="student-list">
+                        
+                       
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
